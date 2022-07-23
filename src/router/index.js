@@ -15,5 +15,6 @@ export default [
             }
         ]
     },
-    { path: '/plan', component: () => import('@/pages/Plan/index.vue') }
+    { path: '/plan', component: () => import('@/pages/Plan/index.vue') },
+    { path: '/loading', component: () => import('@/pages/LoadingPage/index.vue') }
 ]

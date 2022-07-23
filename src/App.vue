@@ -1,10 +1,8 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-</script>
-
 <template>
+    <loading-page />
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/51108500?v=4" />
     <div class="top-menu">
+
         <div class="top-menu-wrap">
             <router-link to="/hello">
                 欢迎
@@ -16,7 +14,14 @@
     </div>
     <router-view />
 </template>
-
+<script>
+import LoadingPage from './pages/LoadingPage/index.vue'
+export default {
+    components:{
+        LoadingPage
+    }
+}
+</script>
 <style>
 * {
   margin: 0;
@@ -25,7 +30,6 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -36,6 +40,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .top-menu-wrap {
@@ -43,5 +48,14 @@
   margin: 0 2rem;
   display: flex;
   justify-content: space-around;
+}
+
+.avatar{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 </style>
