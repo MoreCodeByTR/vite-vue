@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <p>Nice to meet you</p>
-    </div>
+  <div>
+    <p>Nice to meet you</p>
+  </div>
 </template>
 
 <script>

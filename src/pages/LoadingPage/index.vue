@@ -1,34 +1,34 @@
 <template>
-    <div v-if="visible" class="loading-container">
-        <div class="tip-text">{{ title }}</div>
-        <div class="loader">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
+  <div v-if="visible" class="loading-container">
+    <div class="tip-text">{{ title }}</div>
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
     </div>
+  </div>
 </template>
 <script>
 export default {
-    name:'LoadingPage',
-    data:() => {
-        return {
-            visible:true,
-            title:'加载中...'
-        }
-    },
-    mounted:function() {
-        let vm = this
-        let img = new Image()
-        img.src = 'https://avatars.githubusercontent.com/u/51108500?v=4'
-        img.onload = function() {
-            setTimeout(() => {
-                vm.visible = false
-            }, 3000)
-        }
+  name:'LoadingPage',
+  data:() => {
+    return {
+      visible:true,
+      title:'加载中...'
     }
+  },
+  mounted:function() {
+    let vm = this
+    let img = new Image()
+    img.src = 'https://avatars.githubusercontent.com/u/51108500?v=4'
+    img.onload = function() {
+      setTimeout(() => {
+        vm.visible = false
+      }, 1000)
+    }
+  }
 }
 </script>
 <style scoped>

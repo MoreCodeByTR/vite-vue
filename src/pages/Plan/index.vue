@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <p>This is a Plan page</p>
-    </div>
+  <div>
+    <p>This is a Plan page</p>
+  </div>
 </template>
 
 <script>

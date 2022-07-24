@@ -1,25 +1,27 @@
 <template>
-    <loading-page />
-    <img class="avatar" src="https://avatars.githubusercontent.com/u/51108500?v=4" />
-    <div class="top-menu">
-
-        <div class="top-menu-wrap">
-            <router-link to="/hello">
-                欢迎
-            </router-link>
-            <router-link to="/plan">
-                计划
-            </router-link>
-        </div>
+  <loading-page />
+  <img class="avatar" src="https://avatars.githubusercontent.com/u/51108500?v=4" />
+  <div class="top-menu">
+    <div class="top-menu-wrap">
+      <router-link to="/hello">
+        欢迎
+      </router-link>
+      <router-link to="/plan">
+        计划
+      </router-link>
+      <router-link to="/canvas">
+        html2canvas
+      </router-link>
     </div>
-    <router-view />
+  </div>
+  <router-view />
 </template>
 <script>
 import LoadingPage from './pages/LoadingPage/index.vue'
 export default {
-    components:{
-        LoadingPage
-    }
+  components:{
+    LoadingPage
+  }
 }
 </script>
 <style>
